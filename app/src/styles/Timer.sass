@@ -1,0 +1,54 @@
+
+.Timer
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+.Timer__button
+    -webkit-appearance: none
+    background: #36373b
+    border: 3px solid white
+    color: white
+    border-radius: 20px
+    padding: 0.8rem
+    font-size: 18px
+    font-weight: 500
+
+.Timer__text
+    text-align: center
+    font-size: 20px
+    padding: 0.5rem
+
+
+.Timer__container
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.Timer__number-countdown
+    font-size: 70px
+    margin: 0.2rem 0 1.5rem 0
+
+.Timer__end
+    font-size: 40px
+    font-weight: 500
+    color: #ff2020
+    margin: 1rem 0 2rem 0
+
+.Timer__noImage
+    width: 200px
+    height: 200px
+.Timer__image
+    width: 200px
+    height: 200px
+    animation: rotation 20s infinite linear
+
+@keyframes rotation
+    0% 
+        transform: rotate(0deg)
+    50% 
+        transform: rotate(70deg)
+    100%
+        transform: rotate(0deg)
