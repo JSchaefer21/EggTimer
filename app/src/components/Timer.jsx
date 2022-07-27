@@ -11,7 +11,7 @@ function Selection(props) {
 
     return <div className="Timer">
 
-        <button className='Timer__button' onClick={handleBackClick}>ATRAS</button>
+        <button className='Timer__button' onClick={handleBackClick}>ATRÁS</button>
         <p className='Timer__text'>Espere a que finalice el temporizador</p>
         <TimerCountdown min={min}/>  
     
