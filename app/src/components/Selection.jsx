@@ -37,8 +37,8 @@ function Selection(props) {
     return <div className="Selection">
 
         <p className='Selection__text'>Seleccione el nivel de coccion deseado</p>
-        <p className='Selection__text'>Pulse START cuando el agua empiece a hervir</p>
-        <button className='Selection__button' onClick={handleStartClick}>START</button>
+        <p className='Selection__text'>Pulse INICIAR cuando el agua empiece a hervir</p>
+        <button className='Selection__button' onClick={handleStartClick}>INICIAR</button>
 
         <div className='Selection__scroll'>
             <button id='0' className='Image__egg-button' onClick={handle0click}>
