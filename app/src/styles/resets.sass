@@ -7,11 +7,15 @@
 html, body, #root
     margin: 0
     height: 100%
+    width: 100%
+#root
     background-color: #415658
 
 body
     display: flex
     flex-direction: column
+    justify-content: center
+    align-items: center
 
 .mw
     width: 100%
@@ -20,3 +24,11 @@ body
 
 ::-webkit-scrollbar
     display: none
+
+@media only screen and (min-width: 700px)
+    #root
+        border-radius: 40px
+        position: relative
+        border: 4px solid black
+        height: 90%
+        width: 425px
