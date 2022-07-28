@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react'
+import useSound from 'use-sound'
+import alarm from '../bell_notification.wav'
 import '../styles/Timer.sass'
 
 function Timer({min}) {
@@ -8,10 +10,21 @@ function Timer({min}) {
     const [ timer, setTimer ] = useState(true)
     const [ image, setImgae ] = useState(-1)
     
+    const [play] = useSound(alarm)
+
+    const playSound=() => {
+        play()
+        setTimeout(function() {
+            play()
+        }, 2500);
+    }
 
     useEffect(()=>{
         let myInterval = setInterval(() => {
-            if (minutes===0 && seconds===0) setTimer(false)
+            if (minutes===0 && seconds===0) {
+                setTimer(false)
+                playSound()
+            }
             if (seconds > 0) {
                 setSeconds(seconds - 1)
             }
