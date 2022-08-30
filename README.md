@@ -1,7 +1,10 @@
-Egg Timer
+# Egg Timer
 
-Actualmente en trabajo: probando, testeando y aprendiendo
+Egg Timer, web application that helps you boil eggs at the specific and perfect point for each one.
 
-Es una aplicacion para calcular el tiempo de coccion deseado de los huevos.
-Con ayuda de imagenes se facilita saber el estado actual del huevo
-Ademas de incluir un contador que nos muentra cuanto falta para acabar
+There is a countdown timer and some pictures to help you know how cooked your eggs are at that specific time.
+
+The timer is set to user preference and an alarm sounds when it reaches the end.
+
+[Web deployed]: https://eggtimer-app.surge.sh/
+**visit: [web deployed]**
